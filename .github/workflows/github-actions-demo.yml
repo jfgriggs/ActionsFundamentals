@@ -18,6 +18,9 @@ jobs:
         run: |
           echo "Name of the event that triggered the workflow: ${{ github.event_name }}"
           echo "Name of the branch that the repository is currently referencing: ${{ github.ref }}"
+      
+      - uses: actions/checkout@v3.3.0
+      
       - name: List files in the repository
         run: |
           echo "List all files in the repository ${{ github.repository }}"
