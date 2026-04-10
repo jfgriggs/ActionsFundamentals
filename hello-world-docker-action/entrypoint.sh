@@ -1,5 +1,5 @@
 #!/bin/sh -l
 
-echo "args: $*"
-echo "hello $1"
+echo "hello $INPUT_WHO_TO_GREET"
 echo "time=$(date)" >> $GITHUB_OUTPUT
+env
